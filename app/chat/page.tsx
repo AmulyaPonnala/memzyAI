@@ -178,7 +178,10 @@ export default function ChatPage() {
               )}
 
               {captions && captions.length > 0 && (
-                <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white p-4 rounded-xl">
+                <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white p-4 rounded-xl space-y-2">
+                  <h3 className="font-bold">
+                    Hey, Meme Lord! Here are some captions:
+                  </h3>
                   <ul className="list-disc list-inside space-y-1">
                     {captions.map((caption, index) => (
                       <li key={index}>{caption}</li>
